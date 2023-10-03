@@ -1,4 +1,4 @@
-﻿program z25;
+program z25;
 Var a, b, c, d, e, f: integer;
 
 Begin
@@ -14,9 +14,8 @@ readln(c);
 
 writeln('Введите сумму копеек сколько заплатили за товар');
 readln(d);
-
+if a>c then write ('вам не хватает') 
+else writeln(e, ' руб. ', f, ' коп.');
 e := (100 * c + d - 100 * a - b) div 100;
 f := (100 * c + d - 100 * a - b) mod 100;
-
-writeln(e, ' руб. ', f, ' коп.');
 End.
